@@ -42,6 +42,9 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
+<button id="themeToggle">
+    Toggle Theme
+</button>
 
 </header>
 
@@ -78,6 +81,12 @@ A fully functioning ecomers website.
 <footer>
 <p>&copy; 2026 Manju</p>
 </footer>
+<script>
+const button = document.getElementById("themeToggle");
 
+button.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
+</script>
 </body>
 </html>

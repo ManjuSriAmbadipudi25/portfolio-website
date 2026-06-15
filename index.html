@@ -45,6 +45,9 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button id="themeToggle">
+    Toggle Theme
+</button>
     </header>
 
     <main id="main-content">
@@ -71,13 +74,26 @@
     </ul>
 
 </section>
+<main id="main-content" role="main">
 
+    <section class="hero">
+        <h2>Hi, I'm Manju</h2>
+        <p>Web Developer | B.Tech Student | AI Enthusiast</p>
+    </section>
+
+</main>
     </main>
 
     <footer>
         <p>&copy; 2026 Manju</p>
     </footer>
+<script>
+const button = document.getElementById("themeToggle");
 
+button.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
+</script>
 </body>
 
 </html>
